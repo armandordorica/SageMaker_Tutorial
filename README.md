@@ -20,3 +20,14 @@ Particularly, the ml.p2.xlarge is almost:
 
 
 Source: https://aws.amazon.com/sagemaker/pricing/
+
+
+### Training Jobs
+A training job is used to train a specific estimator.
+
+When you request a training job to be executed you need to provide a few items:
+
+A location on S3 where your training (and possibly validation) data is stored,
+A location on S3 where the resulting model will be stored (this data is called the model artifacts),
+A location of a docker container (certainly this is the case if using a built in algorithm) to be used for training
+A description of the compute instance that should be used.
